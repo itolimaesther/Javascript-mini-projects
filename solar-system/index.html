@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Solar System: Document Object Model:30 Days Of JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+
+    body{
+    background: url(./images/galaxy.gif);
+    margin: 0 auto;
+    width: 70%;
+
+}
+
+header{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+header h1{
+    color: #fff;
+    font-size: 40px;
+}
+
+main{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, select, button{
+    border: none;
+    padding: 10px 5px;
+}
+
+input{
+    width: 30%;
+}
+select{
+    width: 15%;
+}
+button{
+    background-color: rgb(95, 95, 95);
+}
+
+.result-section{
+    padding: 8px;
+}
+.planet-name{
+    color: #fff;
+    font-weight: 700;
+}
+
+.weigth-result{
+    background-color: rgba(134, 134, 134, 0.459);
+    border-radius: 50%;
+    padding: 12px 10px;
+    margin-top: 12px;
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;
+    
+}
+
+.image img{
+    width: 30%;
+    padding: 20px 0px;
+}
+
+.flex-container{
+    background-color: rgba(155, 155, 155, 0.164);
+}
+
+/* .description{
+    width: 40%;
+    background-color: rgba(134, 134, 134, 0.342);
+    padding: 15px 0px;
+} */
+
+
+</style>
+
+<body>
+    <header>
+        <h1>Calculate a weight of an object on a planet</h1>
+
+        <input type="text" id="mass" placeholder="Mass in Kilogram" />
+        <select>
+            <option value='none'>--select planet-- </option>
+            <option value='mercury'>MERCURY </option>
+            <option value='venus'>VENUS </option>
+            <option value='earth'>EARTH </option>
+            <option value='moon'>MOON </option>
+            <option value='mars'>MARS </option>
+            <option value='jupita'>JUPITA </option>
+            <option value='saturn'>SATURN </option>
+            <option value='uranus'>URANUS </option>
+            <option value='neptune'>NEPTUNE </option>
+            <option value='pluto'>PLUTO</option>
+        </select>
+        <button>Calculate weight</button>
+
+    </header>
+    <main>
+        <div class="flex-container">
+            <div class="flex-item image">
+                <img src='./images/earth.png' class="planet-image" />
+            </div>
+            <div class="flex-item description">
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

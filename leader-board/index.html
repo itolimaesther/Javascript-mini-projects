@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>30DaysOfJavaScript:11 Day </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/fontawesome.min.css" integrity="sha512-Zk+DVNUdkfPB4Z9uMWi/v/IXrRY+oZD8WtPzgNm0ywnxhtOED6pfBA7B7A3UBuNXQ2rcLq40pcDPR/pkLtJZ8Q==" crossorigin="anonymous" /></head>
+
+
+<style>
+    .wrapper{
+        width: 70%;
+    margin: 0 auto;
+    }
+
+    .wrapper h1{
+        letter-spacing: 3px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .inputs{
+        margin-bottom: 45px;
+    }
+
+    input {
+    padding: 7px;
+    width: 20%;
+}
+
+button{
+    padding: 7px;
+}
+.blocks{
+    text-transform: uppercase;
+    width: 72%;
+    margin: 0 auto;
+}
+
+.player {
+    background-color: #ead7c3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.player p {
+    width: 124px;
+    font-size: 14px;
+}
+.buttons button{
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: none;
+    width: 30px;
+}
+
+.buttons .delete-btn span{
+    color: rgb(138, 0, 0) !important;
+}
+
+.hide{
+display:none;
+}
+
+</style>
+
+
+<body>
+    <!-- <h1>30DaysOfJavaScript:11 Day</h1>
+    <h2>Destructuring and Spread</h2> -->
+
+
+    <main>
+        <div class="wrapper">
+            <!-- <h1>30 Days of Javascript Leaderboard</h1> -->
+            
+            <div class="inputs">
+                <input id="first-name" type="text" placeholder="First Name">
+                <input id="second-name" type="text" placeholder="Second Name">
+                <input id="country-name" type="text" placeholder="Country">
+                <input id="player-score" type="text" placeholder="Player Score">
+                <button id="add-player">Add Player</button>
+            </div>
+
+            <div class="blocks">
+                <div class="player">
+                    <p class="name"> John Doe</p>
+                    <p class="country">Uganda</p>
+                    <p class="score">5</p>
+                    <div class="buttons">
+                        <button id="delete-btn" class="delete-btn"> <span><i class="far fa-trash-alt"></i></span> </button>
+                        <button id="add-five" class="add-five"> <span>+5</span> </button>
+                        <button id="remove-five" class="remove-five"> <span>-5</span></button>
+                    </div>
+                </div>
+                <div class="player">
+                    <p class="name"> Jane Doe</p>
+                    <p class="country">Taxes</p>
+                    <p class="score">5</p>
+                    <div class="buttons">
+                        <button id="delete-btn" class="delete-btn"> <span><i class="far fa-trash-alt"></i></span> </button>
+                        <button id="add-five" class="add-five"> <span>+5</span> </button>
+                        <button id="remove-five" class="remove-five"> <span>-5</span></button>
+                    </div>
+                </div>
+                <div class="player">
+                    <p class="name"> Blessing Doe</p>
+                    <p class="country">Italy</p>
+                    <p class="score">5</p>
+                    <div class="buttons">
+                        <button id="delete-btn" class="delete-btn"> <span><i class="far fa-trash-alt"></i></span> </button>
+                        <button id="add-five" class="add-five"> <span>+5</span> </button>
+                        <button id="remove-five" class="remove-five"> <span>-5</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./data/countries_data.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha512-mmg93Ayfz302b59v2Qmsi9ZXpe7nPvFAmGR6TY3bBRBTPHb16oys1f4c0Kpiu8MUhDmtw76ni2pCcvxBOzhCMw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/fontawesome.min.js" integrity="sha512-54qmZ61VU+a44a9IqeNgd+J/Y2UmKriO7keQ/jC0AjN0Nzx51ox9Q20ublIcsMbWKkPJUZU0N+OaKwokQdTqXA==" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

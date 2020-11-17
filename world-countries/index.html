@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>World Countries Data</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+</head>
+
+<style>
+    body{
+        margin: 0 auto;
+        /* width: 70%; */
+        text-align: center;
+        background-color: #cccccc;
+    }
+    /* header{
+        width: 70%;
+    } */
+
+    #countries h2{
+        color: orange;
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    button{
+        border: none;
+        background-color: orange;
+        padding: 10px 18px;
+    }
+
+    .graph-buttons{
+        background-color: #ffffff;
+        padding: 18px 0px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .isactive{
+        display: block;
+    }
+
+    .ishidden{
+        display: none;
+    }
+    .graphs{
+        width: 60%;
+        margin: 0 auto;
+    }
+    /* .graph-wrapper{
+        display: flex;
+        justify-content: space-around;
+
+    } */
+
+</style>
+
+<body>
+    <header id="countries">
+        <h2>World Countries Data</h2>
+        <p class="subtitle"></p>
+        <!-- <p class="feedback"></p> -->
+    </header>
+    <main>
+
+        <div class="wrapper">
+            <div class="graph-buttons">
+                <button class="population">Population</button>
+                <button class="languages">Languages</button>
+            </div>
+            <h4 class="graph-title"></h4>
+            <div class="graphs">
+                <div class="graph-wrapper" id="stat">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./data/countries_data.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

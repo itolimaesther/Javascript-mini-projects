@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>30DaysOfJavaScript:11 Day </title>
+</head>
+
+
+
+<style>
+    .wrapper{
+        width: 70%;
+    margin: 0 auto;
+    }
+
+    .show{
+        width: 85%;
+        border-radius: 5px;
+        background-color: burlywood;
+    }
+    .show p{
+        padding: 15px 10px;
+    }
+
+
+    .wrapper h1{
+        letter-spacing: 18px;
+        font-size: 50px;
+    }
+
+    .challenges-type{
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    .javascript, .python, .javascript-30{
+        width: 16%;
+    background: #eee;
+    text-align: center;
+    padding: 25px 10px;
+    border: 1px solid #cecece;
+    }
+
+    .javascript:hover, .python:hover, .javascript-30:hover{
+        cursor: pointer;
+        background-color:rgb(226, 214, 210);
+        -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+.introduction p {
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.show p{
+    position: relative;
+  /* animation: slidein infinite; */
+}
+
+@keyframes slidein {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+</style>
+
+<body>
+    <!-- <h1>30DaysOfJavaScript:11 Day</h1>
+    <h2>Destructuring and Spread</h2> -->
+
+    <main>
+        <div class="wrapper">
+            <h1>Asabeneh Yatayeh</h1>
+            <div class="show">
+                <p></p>
+            </div>
+
+            <div class="introduction">
+                <p>I am Asabeneh Yatayeh. I am an instructor, developer, motivator and content creator.
+                I love educating people and creating educational materials. In January 2019 I also created 
+                a teaching material <b>Javascript For Everyone</b> In December 2019 I created 
+                <b>30 Days Of Python</b> challenge and January 2020, I created <b>30 Days of Javascript</b> 
+                challenge.</p>
+            </div>
+
+            <div class="challenges-type">
+                <div class="javascript">
+                    <p>JAVASCRIPT FOR EVERYONE</p>
+                </div>
+                <div class="python">
+                    <p>30 DAYS OF PYTHON</p>
+                </div>
+                <div class="javascript-30">
+                    <p>30 DAYS OF JAVASCRIPT</p>
+                </div>
+            </div>
+
+            <div class="technologies">
+                <p class="tech-text">The technologies I teach
+                    <span></span>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./data/countries_data.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
